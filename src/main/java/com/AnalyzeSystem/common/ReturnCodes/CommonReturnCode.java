@@ -8,7 +8,8 @@ public enum CommonReturnCode implements IReturnCode{
     BAD_REQUEST(400, "请求参数出错"),
     UNAUTHORIZED(401, "您未登录或者登录已超时,请先登录!"),
     FORBIDDEN(403, "没有权限"),
-    NOT_FOUND(404, "找不到页面");
+    NOT_FOUND(404, "找不到页面"),
+    RESOURCE_NOT_FOUND(500,"资源无法加载");
 
     /**
      * 返回状态码

@@ -71,9 +71,9 @@
         <div id="navbar" class="navbar-collapse collapse">
 				    <ul class="nav navbar-nav navbar-right">
 						<li><a href="homepage.jsp" class="active"><font size="3">首页</font></a></li>
-						<li><a href="dataTotal.jsp"><font size="3">数据分析</font></a></li>
-						<li><a href="viewPersonInfo.jsp"><font size="3">我的信息</font></a></li>
-						<li><a href="social.jsp"><font size="3">留言社区</font></a></li>
+						<li><a href="system/dataTotal.jsp"><font size="3">数据分析</font></a></li>
+						<li><a href="system/viewPersonInfo.jsp"><font size="3">我的信息</font></a></li>
+						<li><a href="system/social.jsp"><font size="3">留言社区</font></a></li>
 				    </ul>
 		</div>
     </div>
@@ -87,7 +87,7 @@
     <!-- 左边导航栏 -->
     <div class="col-sm-3 col-md-2 sidebar">
         <ul class="nav nav-sidebar">
-            <li><a href="dataTotal.jsp" >数据概览</a></li>
+            <li><a href="system/dataTotal.jsp" >数据概览</a></li>
             <li class="active"><a href="dataDiagram.jsp" >图表分析</a></li>
             <!--功能可以继续扩展-->
         </ul>

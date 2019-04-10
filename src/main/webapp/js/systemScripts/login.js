@@ -2,6 +2,7 @@
 $(function(){
     $('#btn_login').click(function()
     {
+        //运行一个简单的检查
         if($('#loginName').val()=="")
         {
             $.messager.alert('提示','用户名不能为空');

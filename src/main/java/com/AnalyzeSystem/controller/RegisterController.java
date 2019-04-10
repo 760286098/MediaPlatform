@@ -63,7 +63,7 @@ public class RegisterController {
         user.setPassword(registerPassword);
         user.setDepartmentName(departmentName);
         user.setStudentNumber(studentNumber);
-        user.setPhoneNumebr(phoneNumber);
+        user.setPhoneNumber(phoneNumber);
         user.setStartYear(startYear);
         user.setDescription(description);
 

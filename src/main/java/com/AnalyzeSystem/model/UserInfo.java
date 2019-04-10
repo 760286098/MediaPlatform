@@ -8,7 +8,7 @@ public class UserInfo {
     private String password;
     private String departmentName;
     private String studentNumber;
-    private String phoneNumebr;
+    private String phoneNumber;
     private String startYear;
     private String description;
     private Date registerTime;
@@ -33,9 +33,11 @@ public class UserInfo {
         return studentNumber;
     }
 
-    public String getPhoneNumebr() {
-        return phoneNumebr;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
+
+
 
     public String getStartYear() {
         return startYear;
@@ -69,8 +71,8 @@ public class UserInfo {
         this.studentNumber = studentNumber;
     }
 
-    public void setPhoneNumebr(String phoneNumebr) {
-        this.phoneNumebr = phoneNumebr;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public void setStartYear(String startYear) {

@@ -14,6 +14,7 @@ import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 /**
@@ -62,7 +63,8 @@ public class LoginController {
     @PostMapping(value = "/login")
     @ResponseBody
     public Object login(@RequestParam(required = false, value = "loginName") String loginName,
-                        @RequestParam(required = false, value = "loginPassword") String loginPassword)
+                        @RequestParam(required = false, value = "loginPassword") String loginPassword,
+                        HttpSession session)
     {
 
         String msg = "";
@@ -77,7 +79,9 @@ public class LoginController {
         {
             if(user.getPassword().equals(loginPassword))
             {
-               return new WebResult(CommonReturnCode.SUCCESS);
+                /*model.addAttribute("userInfo",user);*/
+                session.setAttribute("userInfo",user);
+                return new WebResult(CommonReturnCode.SUCCESS);
             }
             else
             {

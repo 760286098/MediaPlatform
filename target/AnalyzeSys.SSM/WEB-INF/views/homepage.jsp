@@ -1,9 +1,10 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" isELIgnored="false"%>
 <%
     /*获取工程路径*/
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -37,6 +38,7 @@
 	<script type="text/javascript" src="https://cdn.bootcss.com/bootbox.js/4.4.0/bootbox.min.js"></script><!-- 如果断网，需要下载这个js -->
 	<script type="text/javascript" src="../../js/bootstrap-table.js"></script>
 	<script type="text/javascript" src="../../js/bootstrap-table-zh-CN.js"></script>
+      <script type="text/javascript">baselocation="${ctx}"</script>
 
 
   </head>
@@ -61,15 +63,23 @@
               <p class="navbar-brand" ><font size="5">新媒体管理平台</font></p>
           </div>
           <div>
-              <p id= "huanying" class="navbar-brand" align="right"><font size="4">用户：<a href="/SwitchPage?page=setpage">${userid}</a> </font></p>
+              <p id= "huanying" class="navbar-brand" align="right"><font size="4">用户：</font><label type="text" id="user" name="user">${userInfo.name}</label>
+              </p>
           </div>
 
           <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
+                  <%--
                   <li><a href="homepage.jsp" class="active"><font size="3">首页</font></a></li>
                   <li><a href="dataTotal.jsp"><font size="3">数据分析</font></a></li>
                   <li><a href="viewPersonInfo.jsp"><font size="3">我的信息</font></a></li>
                   <li><a href="social.jsp"><font size="3">留言社区</font></a></li>
+                  --%>
+                      <li><a type="text" id="lbl_gotoHomepage" class = "active"><font size="3">首页</font></a></li>
+                      <li><a type="text" id="lbl_gotoDataTotal" class = "active"><font size="3">数据分析</font></a></li>
+                      <li><a type="text" id="lbl_gotoViewPersonInfo" class = "active"><font size="3">我的信息</font></a></li>
+                      <li><a type="text" id="lbl_gotosocial" class = "active"><font size="3">留言社区</font></a></li>
+
               </ul>
 
           </div>
@@ -144,5 +154,7 @@
           </div><!-- /.container -->
   </div>
   </body>
+
+  <script type="text/javascript" src="../../js/systemScripts/homepage.js"></script>
 </html>
 
