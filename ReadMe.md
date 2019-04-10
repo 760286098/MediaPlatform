@@ -4,9 +4,9 @@ basicFrame介绍：
 项目的架构采用SSM整合的结构：
 ---------------------------
 
-视图层放到了webapp下的web-inf的views，用jsp写页面，页面跳转关系属于业务层范畴 <br>
-业务层在项目包下的controller用于处理逻辑事务，调用service服务层 <br>
-模型层在model，目前放了一个表（UserInfo）的model，以后会考虑实体类的存放位置 <br>
+视图层放到了webapp下的web-inf的views，用jsp写页面，页面跳转关系属于业务层范畴 <br><br>
+业务层在项目包下的controller用于处理逻辑事务，调用service服务层 <br><br>
+模型层在model，目前放了一个表（UserInfo）的model，以后会考虑实体类的存放位置 <br><br>
 数据库层在dao下 <br><br>
 
 值得注意的是 <br>
