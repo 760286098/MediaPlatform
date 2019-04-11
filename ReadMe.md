@@ -36,12 +36,21 @@ v1.0
 
 ********
 
-v2.0
+v1.1
 -----
 
 todolist: <br>
 1.logincontroller向session中写入user，homepage以及其他controller从中读取user获取具体用户信息 (OJBK)<br>
 2.其余各个controller的实现逻辑 (working)<br>
-3.接1，由于现在用户的password是以明文的形式存放在MySQL的（谁用谁煞笔），以后肯定是要引入shiro框架对MySQL的password加密，并不直接通过session获取user，需要经过shiro的拦截与识别 (not now, not today, not tomorrow :) )<br>
+3.接1，由于现在用户的password是以明文的形式存放在MySQL的（谁用谁煞笔），以后肯定是要引入shiro框架对MySQL的password加密，并不直接通过session获取user，需要经过shiro的拦截与识别 (not now, not today, not tomorrow :) )<br><br>
 
 
+********
+
+v2.0
+-----
+
+1.完成了整个项目的大部分功能 <br>
+2.关键数据的获取 （todo）
+3.对爬到的数据进行分析 （todo）
+4.社区的通知部分bug以及留言评论功能需要完成 （todo）
