@@ -4,9 +4,9 @@ basicFrame介绍：
 项目的架构采用SSM整合的结构：
 ---------------------------
 
-视图层放到了webapp下的web-inf的views，用jsp写页面，页面跳转关系属于业务层范畴 <br>
-业务层在项目包下的controller用于处理逻辑事务，调用service服务层 <br>
-模型层在model，目前放了一个表（UserInfo）的model，以后会考虑实体类的存放位置 <br>
+视图层放到了webapp下的web-inf的views，用jsp写页面，页面跳转关系属于业务层范畴 <br><br>
+业务层在项目包下的controller用于处理逻辑事务，调用service服务层 <br><br>
+模型层在model，目前放了一个表（UserInfo）的model，以后会考虑实体类的存放位置 <br><br>
 数据库层在dao下 <br><br>
 
 值得注意的是 <br>
@@ -40,8 +40,8 @@ v2.0
 -----
 
 todolist: <br>
-1.logincontroller向session中写入user，homepage以及其他controller从中读取user获取具体用户信息 <br>
-2.其余各个controller的实现逻辑 <br>
-3.接1，由于现在用户的password是以明文的形式存放在MySQL的（谁用谁煞笔），以后肯定是要引入shiro框架对MySQL的password加密，并不直接通过session获取user，需要经过shiro的拦截与识别 <br>
+1.logincontroller向session中写入user，homepage以及其他controller从中读取user获取具体用户信息 (OJBK)<br>
+2.其余各个controller的实现逻辑 (working)<br>
+3.接1，由于现在用户的password是以明文的形式存放在MySQL的（谁用谁煞笔），以后肯定是要引入shiro框架对MySQL的password加密，并不直接通过session获取user，需要经过shiro的拦截与识别 (not now, not today, not tomorrow :) )<br>
 
 
