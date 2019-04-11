@@ -1,13 +1,25 @@
 package com.AnalyzeSystem.dao;
 
+import com.AnalyzeSystem.common.PageInfo;
+import com.AnalyzeSystem.common.dto.ArticlePageDTO;
+import com.AnalyzeSystem.common.vo.ArticleVO;
 import com.AnalyzeSystem.model.Article;
 
 import java.util.List;
 
-public interface ArticleDao{
-    //public ArticleDao getInstance();
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.session.RowBounds;
 
-    List<Article> selectArticleByTitle(String title);
+public interface ArticleDao{
+
+    void insertArticle(@Param("article")Article article);
+
+    Article selectArticleById(String articleId);
+
+    Article selectArticleByTitle(String title);
 
     void deleteArticle(String articleId);
+
+    List<ArticleVO> listByPage(@Param("pageInfo")PageInfo pageInfo, @Param("search")String search,RowBounds rowBounds);
+
 }

@@ -67,7 +67,7 @@ public class LoginController {
                         HttpSession session)
     {
 
-        String msg = "";
+
         //根据登入名字判断此用户是否存在
         UserInfo user = userInfoService.selectUserByName(loginName);
 

@@ -18,7 +18,7 @@ $(function(){
             var info =
                 {
                     loginName: $("#loginName").val(),
-                    loginPassword :$("#loginPassword").val(),
+                    loginPassword :$("#loginPassword").val()
 
                 }
         }
@@ -31,7 +31,7 @@ $(function(){
                 success : function (data) {
                     console.info(data);
                     if(data.code === 1){
-                        window.location.href = baselocation + "/homepage";
+                        window.location.href = baselocation + "/home/view";
                     }
                     else
                     {

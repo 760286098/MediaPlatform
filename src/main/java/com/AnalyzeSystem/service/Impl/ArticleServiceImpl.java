@@ -1,44 +1,52 @@
 package com.AnalyzeSystem.service.Impl;
 
+import com.AnalyzeSystem.common.PageInfo;
+import com.AnalyzeSystem.common.dto.ArticlePageDTO;
+import com.AnalyzeSystem.common.vo.ArticleVO;
 import com.AnalyzeSystem.dao.ArticleDao;
 import com.AnalyzeSystem.model.Article;
 import com.AnalyzeSystem.service.ArticleService;
-import com.AnalyzeSystem.service.DaoService;
-import org.apache.ibatis.session.SqlSession;
 
+import com.baomidou.mybatisplus.plugins.Page;
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 import java.util.List;
 
-public class ArticleServiceImpl implements ArticleService ,DaoService
+@Service("ArticleService") //声明以下类作为service注入
+public class ArticleServiceImpl implements ArticleService
 {
-    private static ArticleDao articleDao;
+    @Resource
+    private ArticleDao articleDao;
 
-    SqlSession session;
+    public void insertArticle(Article article)
+    {
+        articleDao.insertArticle(article);
+    }
 
-    public void commit(){
-        session.commit();
+    public void deleteArticle(String articleId)
+    {
+        articleDao.deleteArticle(articleId);
     }
-    public void close(){
-        session.close();
-    }
-    /*public static ArticleDao getInstance(){
-        if (articleDao==null){
-            articleDao=new ArticleDao();
-        }
-        return articleDao;
-    }*/
 
-    //private ArticleDao(){}
+    public Article selectArticleById(String articleId)
+    {
+        return articleDao.selectArticleById(articleId);
+    }
 
-    public void insertArticle(Article article){
-        session.insert("Article.insertArticle",article);
+    public Article selectArticleByTitle(String title)
+    {
+        return articleDao.selectArticleByTitle(title);
     }
-    public Article selectArticleById(String articleId){
-        return session.selectOne("Article.selectArticleById",articleId);
+
+    public ArticlePageDTO listByPage(PageInfo pageInfo, String search)
+    {
+        Page<ArticleVO> page = new Page<>(pageInfo.getCurrent(),pageInfo.getLimit());//分页实体，注意此处page为mybatis-plus扩展框架的类，创建对象没有经过序列化，故不经过spring注入，直接new就行
+        List<ArticleVO> articleVOs = articleDao.listByPage(pageInfo, search, page);
+        pageInfo.setTotal((int)page.getTotal());
+        return new ArticlePageDTO(articleVOs,pageInfo);
     }
-    public List<Article> selectArticleByTitle(String title){
-        return session.selectList("Article.selectArticleByTitle",title);
-    }
-    public void deleteArticle(String articleId){
-        session.delete("Article.deleteArticle",articleId);
-    }
+
+
 }

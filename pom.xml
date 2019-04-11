@@ -62,6 +62,20 @@
       <scope>runtime</scope>
     </dependency>
 
+    <!--mybatis扩展框架，主要打算用其注解tableid等，来实现vo(view object)的封装-->
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus</artifactId>
+      <version>2.3</version>
+    </dependency>
+
+    <!--配置json解析器，这里用阿里的fastjson-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.47</version>
+    </dependency>
+
     <!-- 添加数据库连接池 -->
     <dependency>
       <groupId>com.mchange</groupId>
@@ -195,5 +209,15 @@
         </plugin>
       </plugins>
     </pluginManagement>
-  </build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>7</source>
+                <target>7</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 </project>

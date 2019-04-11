@@ -3,7 +3,7 @@ package com.AnalyzeSystem.model;
 import java.util.Date;
 
 public class UserInfo {
-    private int id;
+    private int userId;
     private String name;
     private String password;
     private String departmentName;
@@ -13,8 +13,8 @@ public class UserInfo {
     private String description;
     private Date registerTime;
 
-    public int getId() {
-        return id;
+    public int getUserId() {
+        return userId;
     }
 
     public String getName() {
@@ -51,8 +51,8 @@ public class UserInfo {
         return registerTime;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public void setPassword(String password) {

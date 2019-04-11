@@ -1,19 +1,26 @@
 package com.AnalyzeSystem.dao;
 
 
+import com.AnalyzeSystem.model.Article;
 import com.AnalyzeSystem.model.Message;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.HashMap;
 import java.util.List;
 
 public interface MessageDao{
+    void insertMessage(@Param("message")Message message);
 
-    //public  MessageDao getInstance();
+    Message selectMessageById(int messageId);
 
-    public void updateContent(final String messageId, final String newContent);
+    Message selectMessageByTitle(String title);
 
-    public Message selectMessageById(String messageId);
+    void deleteMessage(int messageId);
 
-    public List<Message> selectMessageByUserId(String userId);
+    int getLastestMessageId();
+
+    String selectUserNameByIdInMessage(int messageId);
+
+
 }

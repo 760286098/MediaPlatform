@@ -1,9 +1,13 @@
 package com.AnalyzeSystem.controller;
 
+import com.AnalyzeSystem.common.PageInfo;
 import com.AnalyzeSystem.common.ReturnCodes.CommonReturnCode;
 import com.AnalyzeSystem.common.ReturnCodes.LoginReturnCode;
+import com.AnalyzeSystem.common.WebPageResult;
 import com.AnalyzeSystem.common.WebResult;
+import com.AnalyzeSystem.common.dto.ArticlePageDTO;
 import com.AnalyzeSystem.model.UserInfo;
+import com.AnalyzeSystem.service.ArticleService;
 import com.AnalyzeSystem.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,18 +30,36 @@ import java.util.List;
 
 @Controller
 public class dataTotalController {
+
     @Autowired
-    private UserInfoService userInfoService;
+    private ArticleService articleService;
 
     @Autowired
     private HttpSession session;
 
 
-    //目前homepage没有什么业务，写几个响应get请求的mapping
 
-    @GetMapping(value = "/system/dataTotal")
+
+    @GetMapping(value = "/dataAnalyze/dataTotal/view")
     public String dataTotal(Model model) {
-        return "/system/dataTotal";
+        return "/dataAnalyze/dataTotal";
+    }
+
+    @GetMapping(value = "/dataAnalyze/dataTotal/") //每次页面加载都会调用
+    @ResponseBody
+    public Object listArticle(PageInfo pageInfo, @RequestParam(required = false, value = "search")String search)
+    {
+        //参数string为bootstraptable在初始化时确定的量，若为真，则记录用户input的string为search
+        //bootstraptable的search功能没有实现
+
+        ArticlePageDTO articlePageDTO = articleService.listByPage(pageInfo,search);
+        return new WebPageResult(articlePageDTO.getArticleVOs(),articlePageDTO.getPageInfo().getTotal());
+
+    }
+
+    @GetMapping(value = "/dataAnalyze/dataDiagram/view")
+    public String dataDiagram(Model model) {
+        return "/dataAnalyze/dataDiagram";
     }
 
 }

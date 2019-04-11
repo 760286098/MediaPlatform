@@ -5,48 +5,44 @@ import com.AnalyzeSystem.model.Message;
 import com.AnalyzeSystem.service.DaoService;
 import com.AnalyzeSystem.service.MessageService;
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 
-public class MessageServiveImpl implements MessageService,DaoService
+@Service("MessageService") //声明以下类作为service注入
+public class MessageServiveImpl implements MessageService
 {
-    static MessageDao messageDao;
+    @Resource
+    private MessageDao messageDao;
 
-    SqlSession session;
+    public void insertMessage(Message message)
+    {
+        messageDao.insertMessage(message);
+    }
 
-    public void commit(){
-        session.commit();
+    public Message selectMessageById(int messageId)
+    {
+        return messageDao.selectMessageById(messageId);
     }
-    public void close(){
-        session.close();
-    }
-    /*public static MessageDao getInstance(){
-        if (messageDao==null){
-            messageDao=new MessageDao();
-        }
-        return messageDao;
-    }*/
 
-    public void insertMessage(Message message){
-        session.insert("Message.insertMessage",message);
+    public Message selectMessageByTitle(String title)
+    {
+        return messageDao.selectMessageByTitle(title);
     }
-    public void deleteMessage(String messageId){
 
-        session.delete("Message.deleteMessage",messageId);
+    public void deleteMessage(int messageId)
+    {
+        messageDao.deleteMessage(messageId);
     }
-    public void updateContent(final String messageId, final String newContent){
-        session.update("Message.updateContent",new HashMap<String,Object>(){
-            {
-                put("messageId",messageId);
-                put("newContent",newContent);
-            }
-        });
+
+    public int getLastestMessageId()
+    {
+        return messageDao.getLastestMessageId();
     }
-    public Message selectMessageById(String messageId){
-        return session.selectOne("Message.selectMessageById",messageId);
-    }
-    public List<Message> selectMessageByUserId(String userId){
-        return session.selectList("Message.selectMessageByUserId",userId);
+
+    public String selectUserNameByIdInMessage(int messageId){
+        return messageDao.selectUserNameByIdInMessage(messageId);
     }
 }

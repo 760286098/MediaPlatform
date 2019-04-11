@@ -23,7 +23,7 @@ public interface UserInfoDao {
      * 修改用户信息
      * @param userInfo
      */
-    void updateUser(@Param("userinfo")UserInfo userInfo);
+    void updateUser(@Param("userinfo_1")UserInfo userInfo);
 
     /**
      * 根据ID获取用户信息

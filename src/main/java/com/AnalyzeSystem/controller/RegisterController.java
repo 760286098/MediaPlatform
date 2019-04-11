@@ -54,11 +54,11 @@ public class RegisterController {
         Date GMTtime = new Date();
 
 
-        Integer userid = userInfoService.getLastestUserId()+1; //抽取最新的id+1，预备绑定给新用户
+        int userid = userInfoService.getLastestUserId()+1; //抽取最新的id+1，预备绑定给新用户
 
         UserInfo user = new UserInfo();
 
-        user.setId(userid);
+        user.setUserId(userid);
         user.setName(registerName);
         user.setPassword(registerPassword);
         user.setDepartmentName(departmentName);

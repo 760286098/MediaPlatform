@@ -3,26 +3,35 @@ package com.AnalyzeSystem.model;
 import java.util.Date;
 
 public class Message {
-    private String messageId;
-    private String userId;
+    private int messageId;
+    private int userId;
     private Date time;
     private String content;
+    private String title;
 
-    public String getMessageId() {
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getMessageId() {
         return messageId;
     }
 
-    public void setMessageId(String messageId) {
-        DataUtil.checkLength(messageId,45);
+    public void setMessageId(int messageId) {
+
         this.messageId = messageId;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
-        DataUtil.checkLength(userId,45);
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 

@@ -20,7 +20,7 @@ public class homepageController {
 
     //目前homepage没有什么业务，写几个响应get请求的mapping
 
-    @GetMapping(value = "/homepage")
+    @GetMapping(value = "/home/view")
     public String homepage(Model model) {
         return "home/homepage";
     }

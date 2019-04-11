@@ -2,6 +2,7 @@
 $(function(){
     $('#btn_login').click(function()
     {
+        //运行一个简单的检查
         if($('#loginName').val()=="")
         {
             $.messager.alert('提示','用户名不能为空');
@@ -17,7 +18,7 @@ $(function(){
             var info =
                 {
                     loginName: $("#loginName").val(),
-                    loginPassword :$("#loginPassword").val(),
+                    loginPassword :$("#loginPassword").val()
 
                 }
         }
@@ -30,7 +31,7 @@ $(function(){
                 success : function (data) {
                     console.info(data);
                     if(data.code === 1){
-                        window.location.href = baselocation + "/homepage";
+                        window.location.href = baselocation + "/home/view";
                     }
                     else
                     {

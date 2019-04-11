@@ -2,49 +2,151 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="AnalyzeSys.SSM:war" />
+      <artifact name="analyzeModule:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="454cd876-7616-4d62-a433-7fa91da8a22a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce8bce11-52c7-453a-9d7b-51c07d41add4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8af46e7d-efa7-439b-a3f0-a31d65e8404c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8af46e7d-efa7-439b-a3f0-a31d65e8404c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/adafa9ef-2ffa-4617-993d-c4d88a2b2c09.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/adafa9ef-2ffa-4617-993d-c4d88a2b2c09.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/CommonReturnCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/CommonReturnCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/dataTotalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/dataTotalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/homepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/homepageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/socialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/socialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/viewPersonInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/InfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/ArticleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/MessageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/MessageDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/UserInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/UserInfoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/model/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/model/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/model/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/changePersonInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info/changePersonInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dataDiagram.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/dataDiagram.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dataTotal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/dataTotal.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/homepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/homepage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/msgDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/msgDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/publishMsg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/publishMsg.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/social.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewPersonInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info/viewPersonInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/MessageServiveImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/MessageServiveImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/Article_sql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/Article_sql.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/Message_sql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/Message_sql.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserInfo_sql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserInfo_sql.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/homepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/homepage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info/changePersonInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info/changePersonInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info/viewPersonInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info/viewPersonInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/msgDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/msgDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/publishMsg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/publishMsg.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/social.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/social.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/dataDiagram.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dataAnalyze/dataDiagram.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/dataTotal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dataAnalyze/dataTotal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/b3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/systemScripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/systemScripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/systemScripts/nav_bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/systemScripts/nav_bar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/ReturnCodes/CommonReturnCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/ReturnCodes/CommonReturnCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/ReturnCodes/IReturnCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/ReturnCodes/IReturnCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/ReturnCodes/LoginReturnCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/ReturnCodes/LoginReturnCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/ReturnCodes/RegisterReturnCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/ReturnCodes/RegisterReturnCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/WebPageResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/WebPageResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/WebResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/common/WebResult.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/controller/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/controller/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/controller/dataTotalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/controller/dataTotalController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/controller/homepageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/controller/homepageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/controller/socialController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/controller/socialController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/controller/viewPersonInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/AccessListDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/AccessListDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/ArticleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/ArticleDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/CommentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/CommentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/MessageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/MessageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/NoticeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/NoticeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/SessionSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/SessionSingleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/UserInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/dao/UserInfoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/DataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/DataUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/Notice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/Notice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/SequenceNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/SequenceNumber.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/changePersonInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/changePersonInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/dataDiagram.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/dataDiagram.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/dataTotal.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/homepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/homepage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/msgDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/msgDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/publishMsg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/publishMsg.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/social.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/viewPersonInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/pageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/model/pageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/AccessListService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/AccessListService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/DaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/DaoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/ArticleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/MessageServiveImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/MessageServiveImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/MessageServiveImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/NoticeServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/NoticeServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/NoticeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/NoticeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/UserInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/Impl/UserInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/MessageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/NoticeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/NoticeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/UserInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/com/AnalyzeSystem/service/UserInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/mapper/Article_sql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/mapper/Article_sql.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/mapper/Message_sql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/mapper/Message_sql.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/mapper/UserInfo_sql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/mapper/UserInfo_sql.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/classes/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/changePersonInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/dataDiagram.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/homepage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/msgDetail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/publishMsg.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/system/dataTotal.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/system/social.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/views/system/viewPersonInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/js/systemScripts/homepage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnalyzeSys.SSM/js/systemScripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnalyzeSys.SSM/js/systemScripts/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/ReturnCodes/CommonReturnCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/ReturnCodes/CommonReturnCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/ReturnCodes/IReturnCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/ReturnCodes/IReturnCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/ReturnCodes/LoginReturnCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/ReturnCodes/LoginReturnCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/ReturnCodes/RegisterReturnCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/ReturnCodes/RegisterReturnCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/WebPageResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/WebPageResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/WebResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/common/WebResult.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/controller/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/controller/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/controller/dataTotalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/controller/dataTotalController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/controller/homepageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/controller/homepageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/controller/socialController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/controller/socialController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/controller/viewPersonInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/AccessListDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/AccessListDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/ArticleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/ArticleDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/CommentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/CommentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/MessageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/MessageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/NoticeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/NoticeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/SessionSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/SessionSingleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/UserInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/dao/UserInfoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/DataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/DataUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/Notice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/Notice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/SequenceNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/SequenceNumber.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/pageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/model/pageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/AccessListService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/AccessListService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/DaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/DaoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/ArticleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/MessageServiveImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/MessageServiveImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/MessageServiveImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/NoticeServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/NoticeServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/NoticeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/NoticeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/UserInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/Impl/UserInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/MessageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/NoticeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/NoticeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/UserInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AnalyzeSystem/service/UserInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/Article_sql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/Article_sql.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/Message_sql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/Message_sql.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserInfo_sql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserInfo_sql.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,6 +182,12 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="final: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="personaltesting: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
       <path>
@@ -87,7 +195,13 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="personaltesting: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="userinfo: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="article: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wechatsogou: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -104,43 +218,30 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="mydb: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mydb@45.76.59.231" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mydb: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="message: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mydb@45.76.59.231" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mydb: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="userinfo: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dataTotal.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/dataTotal.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="140" column="45" selection-start-line="140" selection-start-column="37" selection-end-line="140" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="msgDetail.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/msgDetail.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="69" column="64" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav_bar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemScripts/nav_bar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="socialController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/socialController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="349">
+              <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,61 +249,82 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemScripts/login.js">
+      <file leaf-file-name="MessageService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/MessageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="488">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepage.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="social.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/social.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/homepage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="78" column="59" lean-forward="true" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="59" />
+            <state relative-caret-position="312">
+              <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/homepageController.java">
+      <file leaf-file-name="wenzhang_info" pinned="false" current-in-tab="false">
+        <entry file="das://adafa9ef-2ffa-4617-993d-c4d88a2b2c09/schema/wechatsogou/table/wenzhang_info">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageServiveImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/MessageServiveImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="499">
+              <caret line="44" column="45" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1171#1172#0" expanded="true" />
-                <element signature="e#1205#1206#0" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginReturnCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/LoginReturnCode.java">
+      <file leaf-file-name="MessageDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/MessageDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="384">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IReturnCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/IReturnCode.java">
+      <file leaf-file-name="Message_sql.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/Message_sql.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="288">
+              <caret line="27" column="100" selection-start-line="27" selection-start-column="100" selection-end-line="27" selection-end-column="100" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonReturnCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/CommonReturnCode.java">
+      <file leaf-file-name="UserInfo_sql.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserInfo_sql.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            <state relative-caret-position="967">
+              <caret line="51" column="13" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="51" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -227,6 +349,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>document</find>
+      <find>id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -235,50 +358,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserInfo_sql.fxml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/adafa9ef-2ffa-4617-993d-c4d88a2b2c09/console.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/adafa9ef-2ffa-4617-993d-c4d88a2b2c09/console_2.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/UserInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/base.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/returnCode/IReturnCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/IReturnCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/LoginReturnCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/WebResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/WebPageResult.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/loginController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/UserInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/UserInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/RegisterReturnCode.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register/register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/UserInfoDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/AccessListServiceImpl.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ce8bce11-52c7-453a-9d7b-51c07d41add4/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/systemScripts/register.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ce8bce11-52c7-453a-9d7b-51c07d41add4/console.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8af46e7d-efa7-439b-a3f0-a31d65e8404c/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserInfo_sql.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/model/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/RegisterController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/systemScripts/homepage.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/dataTotalController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/viewPersonInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/homepageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/socialController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/CommonReturnCode.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/homepage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/systemScripts/login.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/dataTotal.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/vo/ArticleVO.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/pageInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/PageInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/dto/ArticlePageDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/ArticleDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/Article_sql.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/homepageController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/adafa9ef-2ffa-4617-993d-c4d88a2b2c09/console_3.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/systemScripts/dataTotal.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dataAnalyze/dataTotal.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/viewPersonInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dataAnalyze/dataDiagram.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info/viewPersonInfo.jsp" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/adafa9ef-2ffa-4617-993d-c4d88a2b2c09/console_4.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8af46e7d-efa7-439b-a3f0-a31d65e8404c/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8af46e7d-efa7-439b-a3f0-a31d65e8404c/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8af46e7d-efa7-439b-a3f0-a31d65e8404c/console_2.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info/changePersonInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/systemScripts/changeInfo.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/UserInfoDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserInfo_sql.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/model/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/InfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/msgDetail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/systemScripts/nav_bar.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/systemScripts/login.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/publishMsg.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/systemScripts/publishMsg.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/model/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/MessagePack.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/adafa9ef-2ffa-4617-993d-c4d88a2b2c09/console_5.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/adafa9ef-2ffa-4617-993d-c4d88a2b2c09/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/dataTotalController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/systemScripts/social.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/MessageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/MessageServiveImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/MessageDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/Message_sql.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/socialController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/social.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/homepage.jsp" />
       </list>
     </option>
   </component>
@@ -302,13 +432,35 @@
         <option name="userSettingsFile" value="E:\eclipse\MARVEN\apache-maven-3.5.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="966" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="384" />
+    <option name="y" value="43" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -319,9 +471,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,71 +509,6 @@
               <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="ReturnCodes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="Impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -440,93 +524,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="systemScripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="info" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="social" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlatform-AnalyzeSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="analyzeProj" type="b2602c69:ProjectViewProjectNode" />
@@ -536,19 +534,22 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="session&#9;PSI&#9;JAVA://com.AnalyzeSystem.dao.SessionSingleton" />
+    <property name="SearchEverywhereHistoryKey" value="UserId&#9;null&#9;null&#10;session&#9;PSI&#9;JAVA://com.AnalyzeSystem.dao.SessionSingleton" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wechat_sogou_crawl-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1.sql" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -556,18 +557,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\webapp\img" />
       <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\resources\mapper" />
       <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\java\com\AnalyzeSystem\service\Impl" />
       <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\java\com\AnalyzeSystem\service" />
       <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\java\com\AnalyzeSystem\model" />
-      <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\java\com\AnalyzeSystem\dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\webapp\img" />
+      <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\webapp\fonts" />
       <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\webapp\WEB-INF\views\social" />
       <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\webapp\WEB-INF\views\system" />
       <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\webapp\WEB-INF\views\info" />
-      <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\webapp\WEB-INF\views" />
-      <recent name="C:\Users\贺俞凯\Desktop\MediaPlatform-AnalyzeSystem\src\main\webapp\WEB-INF\views\home" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -627,7 +628,7 @@
     <configuration name="SSM-testing" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.10" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="AnalyzeSys.SSM:war">
+        <artifact name="analyzeModule:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -693,7 +694,7 @@
       <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="AnalyzeSysSSM:war" />
-          <artifact name="AnalyzeSys.SSM:war" />
+          <artifact name="analyzeModule:war exploded" />
         </option>
       </method>
     </configuration>
@@ -728,53 +729,65 @@
       <workItem from="1554867100329" duration="1137000" />
       <workItem from="1554873568860" duration="1661000" />
       <workItem from="1554880985654" duration="9379000" />
+      <workItem from="1554893596124" duration="11654000" />
+      <workItem from="1554906608921" duration="29042000" />
+      <workItem from="1554935766105" duration="6614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82889000" />
+    <option name="totallyTimeSpent" value="130199000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.12726304" side_tool="true" weight="0.21274298" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.3293348" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="right" id="CDI" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32960597" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="CDI" order="4" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" sideWeight="0.9323741" weight="0.1256656" />
+      <window_info anchor="bottom" id="SQL Generator" order="8" weight="0.20194384" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.9323741" weight="0.28221512" />
       <window_info id="Structure" order="1" sideWeight="0.14241487" side_tool="true" weight="0.28820962" />
       <window_info anchor="right" id="JSF" order="4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.16090713" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.24838012" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36069113" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.24730022" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26349893" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.87273693" weight="0.023758098" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32937366" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85758513" visible="true" weight="0.2172524" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32289416" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.85758513" weight="0.42651758" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="5" sideWeight="0.0676259" side_tool="true" visible="true" weight="0.24653888" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.31209505" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="SQL Generator" order="8" weight="0.3261339" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
@@ -789,205 +802,121 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/RegisterController.java</url>
-          <line>53</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/socialController.java</url>
+          <line>109</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/LoginController.java</url>
-          <line>82</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/socialController.java</url>
+          <line>46</line>
           <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/RegisterController.java</url>
-          <line>42</line>
-          <properties class="com.AnalyzeSystem.controller.RegisterController" method="register">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="user" />
+        <watch expression="oldUser" />
+        <watch expression="newUser" />
+        <watch expression="user" />
+        <watch expression="session" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/AccessListDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/NoticeService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/MessageServiveImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/NoticeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/Article_sql.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AccessList_sql.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/publishMsg.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-194" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/model/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="391">
+          <caret line="187" column="61" selection-start-line="187" selection-start-column="61" selection-end-line="187" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/ArticleDao.java">
+    <entry file="das://8af46e7d-efa7-439b-a3f0-a31d65e8404c/schema/mydb/table/userinfo" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemScripts/changeInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="397">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/ArticleService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemScripts/publishMsg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="349">
+          <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/ArticleServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemScripts/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="912">
+          <caret line="38" column="21" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="38" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="das://ce8bce11-52c7-453a-9d7b-51c07d41add4/schema/mydb/table/user" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/model/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="240">
+          <caret line="10" selection-end-line="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/AccessListServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info/viewPersonInfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="936">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="das://adafa9ef-2ffa-4617-993d-c4d88a2b2c09/schema/personaltesting/table/userinfo.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ce8bce11-52c7-453a-9d7b-51c07d41add4/console_1.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/MessagePack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/UserInfoDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dataAnalyze/dataDiagram.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
+        <state relative-caret-position="312">
+          <caret line="94" column="13" lean-forward="true" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="das://ce8bce11-52c7-453a-9d7b-51c07d41add4/schema/mydb/table/userinfo.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ce8bce11-52c7-453a-9d7b-51c07d41add4/console.sql">
+    <entry file="das://8af46e7d-efa7-439b-a3f0-a31d65e8404c/schema/mydb/table/message" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8af46e7d-efa7-439b-a3f0-a31d65e8404c/console_2.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="das://ce8bce11-52c7-453a-9d7b-51c07d41add4/schema/mydb/table/userinfo" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/UserInfoService.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/adafa9ef-2ffa-4617-993d-c4d88a2b2c09/console_5.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+        <state relative-caret-position="1464">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8af46e7d-efa7-439b-a3f0-a31d65e8404c/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/UserInfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/MavenRepository/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="219" selection-start-line="219" selection-end-line="219" />
+    <entry file="das://8af46e7d-efa7-439b-a3f0-a31d65e8404c/schema/mydb/table/article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/SessionSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/MavenRepository/org/springframework/spring-context/4.3.5.RELEASE/spring-context-4.3.5.RELEASE-sources.jar!/org/springframework/ui/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserInfo_sql.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="29" column="87" selection-start-line="29" selection-start-column="79" selection-end-line="29" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/RegisterReturnCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://adafa9ef-2ffa-4617-993d-c4d88a2b2c09/schema/personaltesting/table/userinfo">
+    <entry file="das://adafa9ef-2ffa-4617-993d-c4d88a2b2c09/schema/personaltesting/table/article">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -996,168 +925,256 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="72">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/model/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8af46e7d-efa7-439b-a3f0-a31d65e8404c/schema/mydb/table/userinfo">
+    <entry file="das://adafa9ef-2ffa-4617-993d-c4d88a2b2c09/schema/personaltesting/table/message">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemScripts/register.js">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/adafa9ef-2ffa-4617-993d-c4d88a2b2c09/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="133" column="3" lean-forward="true" selection-start-line="133" selection-start-column="3" selection-end-line="133" selection-end-column="3" />
+        <state relative-caret-position="306">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register/register.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dataAnalyze/dataTotal.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="146" selection-start-line="146" selection-end-line="146" selection-end-column="84" />
+        <state relative-caret-position="-4027" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemScripts/dataTotal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="-4867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/viewPersonInfoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1479#1480#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="245">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/RegisterController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/UserInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-840">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemScripts/social.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/dataTotalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+        <state relative-caret-position="-24">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/dataTotalController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/InfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        <state relative-caret-position="113">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/LoginReturnCode.java">
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-core/4.3.5.RELEASE/spring-core-4.3.5.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="188">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/IReturnCode.java">
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-tx/4.3.5.RELEASE/spring-tx-4.3.5.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="452">
+          <caret line="292" selection-start-line="292" selection-end-line="292" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/common/ReturnCodes/CommonReturnCode.java">
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-tx/4.3.5.RELEASE/spring-tx-4.3.5.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        <state relative-caret-position="116">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="e#3788#3929#0" expanded="true" />
+            <element signature="e#3928#3929#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="658" selection-start-line="658" selection-end-line="658" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="749" selection-start-line="749" selection-end-line="749" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="847" selection-start-line="847" selection-end-line="847" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE-sources.jar!/org/springframework/web/filter/CharacterEncodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2136">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/MavenRepository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="906" selection-start-line="906" selection-end-line="906" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/dao/MessageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserInfo_sql.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="967">
+          <caret line="51" column="13" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/Message_sql.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="27" column="100" selection-start-line="27" selection-start-column="100" selection-end-line="27" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/service/Impl/MessageServiveImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="44" column="45" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/socialController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="349">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/AnalyzeSystem/controller/homepageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/social.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="281">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://adafa9ef-2ffa-4617-993d-c4d88a2b2c09/schema/wechatsogou/table/wenzhang_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/homepage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="78" column="59" lean-forward="true" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemScripts/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemScripts/nav_bar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/system/dataTotal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="140" column="45" selection-start-line="140" selection-start-column="37" selection-end-line="140" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/social/msgDetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="69" column="64" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="64" />
+        <state relative-caret-position="312">
+          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1167,7 +1184,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>AnalyzeSys.SSM:war</last-edited>
+          <last-edited>analyzeModule:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
