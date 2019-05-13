@@ -6,6 +6,7 @@ import com.AnalyzeSystem.common.ReturnCodes.RegisterReturnCode;
 import com.AnalyzeSystem.common.WebResult;
 import com.AnalyzeSystem.model.UserInfo;
 import com.AnalyzeSystem.service.UserInfoService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

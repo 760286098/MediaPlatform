@@ -5,32 +5,41 @@ import java.util.Date;
 public class Comment {
 
 
-    private String commentId;
-    private  String userId;
-    private String messageId;
+    private int commentId;
+    private int userId;
+    private int messageId;
     private Date time;
+    private String content;
 
-    public String getCommentId() {
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public int getCommentId() {
         return commentId;
     }
 
-    public void setCommentId(String commentId) {
+    public void setCommentId(int commentId) {
         this.commentId = commentId;
     }
-    public String getUserId() {
+    public int getUserId() {
 
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
-    public String getMessageId() {
+    public int getMessageId() {
         return messageId;
     }
 
-    public void setMessageId(String messageId) {
+    public void setMessageId(int messageId) {
         this.messageId = messageId;
     }
 

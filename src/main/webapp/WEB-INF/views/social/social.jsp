@@ -4,6 +4,7 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html lang="en">
 	<head>
     <meta charset="utf-8">
@@ -100,22 +101,31 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</br></br>
 
 
-					<div class="grid_3 grid_4 ">
-						<h3 class="hdg"><a id="a_InsideGotoMsgDetail"><label id = "Message_title">${messagePack.title}</label></a></h3>
-						<div class="bs-example">	
-							<table class="table">
-								<tbody>
-								<tr ><h4><label id="message_content">${messagePack.content}</label></h4></tr>
-								<tr>
-									<td ><h4>发布人：<label id="user_name">${messagePack.userName}</label></h4></td>
-									<td ><h4>发布时间：<label id="message_date">${messagePack.date}</label></h4></td>
-								</tr>
-									
-								</tbody>
-							</table>
-							</br></br>
+					<c:forEach items="${messages}" var="message">
+						<div class="grid_3 grid_4 ">
+
+							<div class="bs-example">
+
+								<table class="table">
+									<tbody>
+									<tr>
+										<h3 class="hdg">
+											<a>
+												<label class="messagelist" id = "${message.messageId}">${message.title}</label>
+											</a>
+										</h3>
+									</tr>
+									<%--<tr ><h4><label id="message_content">${message.content}</label></h4></tr>--%>
+									<tr>
+										<td ><h4>发布人：<label id="user_name">${message.userName}</label></h4></td>
+										<td ><h4>发布时间：<label id="message_date">${message.date}</label></h4></td>
+									</tr>
+									</tbody>
+								</table>
+								</br></br>
+							</div>
 						</div>
-					</div>
+					</c:forEach>
 
 
 					

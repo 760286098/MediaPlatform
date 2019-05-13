@@ -4,6 +4,7 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html lang="en">
 	<head>
     <meta charset="utf-8">
@@ -95,7 +96,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 				<!-- 控制输出内容在右半部分 -->	
 				<div class="col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-2 main">
-					<h2>通知详情</h2>
+					<%--<h2>通知详情</h2>
 					</br></br>
 					<h4>
 					主要页面：</br>
@@ -121,37 +122,71 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					公告（通过网站后台修改）信息：</br>
 					公告浏览历史：</br>
 					</h4>
-					</br></br></br></br>
+					</br></br></br></br>--%>
 
-					<div class="grid_3 grid_4 ">
-						<h3 class="hdg">留言</h3>
-						<div class="bs-example">	
-							<table class="table">
-								<tbody>
-								<tr><h5>留言内容1</h5></tr>
-								<tr>
-									<td><h6>留言人1</h6></td>
-									<td><h6>留言时间</h6></td>
-								</tr>
-									
-								</tbody>
-							</table>
-							</br></br>
+						<div class="grid_3 grid_4 ">
+
+							<div class="bs-example">
+
+								<table class="table">
+									<tbody>
+									<tr>
+										<h2 class="hdg">
+											<a>
+												<label id = "currentMessage_title">${currentMessage.title}</label>
+											</a>
+										</h2>
+									</tr>
+									<tr ><h3><label id="message_content">${currentMessage.content}</label></h3></tr>
+									</br></br></br></br></br></br></br></br>
+									<tr>
+										<td ><h4>发布人：<label id="user_name">${currentMessage.userName}</label></h4></td>
+										<td ><h4>发布时间：<label id="message_date">${currentMessage.date}</label></h4></td>
+									</tr>
+									</tbody>
+								</table>
+								</br></br>
+							</div>
 						</div>
+
+						<div class="grid_3 grid_4 ">
+							<h3 class="hdg">留言</h3>
+							</br></br></br></br>
+
+							<c:if test ="${comments ne null}">
+								<c:forEach items="${comments}" var="comment">
+									<div class="bs-example">
+										<table class="table">
+											<tbody>
+											<tr><h5>${comment.content}</h5></tr>
+											<tr>
+												<td><h6>${comment.userName}</h6></td>
+												<td><h6>${comment.date}</h6></td>
+											</tr>
+
+											</tbody>
+										</table>
+										</br></br>
+									</div>
+								</c:forEach>
+							</c:if>
+
+
+
 						
-						<div class="bs-example">	
-							<table class="table">
-								<tbody>
-								<tr><h5>留言内容2</h5></tr>
-								<tr>
-									<td><h6>留言人2</h6></td>
-									<td><h6>留言时间</h6></td>
-								</tr>
-									
-								</tbody>
-							</table>
-							</br></br>
-						</div>
+							<%--<div class="bs-example">
+								<table class="table">
+									<tbody>
+									<tr><h5>留言内容2</h5></tr>
+									<tr>
+										<td><h6>留言人2</h6></td>
+										<td><h6>留言时间</h6></td>
+									</tr>
+
+									</tbody>
+								</table>
+								</br></br>
+						    </div>--%>
 					</div>
 					
 					<div class="tab-content">
@@ -163,12 +198,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</p>
 						<form role="form">
 							<div>
-								<textarea name="customermessage" style="width:1000px;" rows="5" warp="virtual" placeholder="正文"></textarea>
+								<textarea id="comment_content" name="customermessage" style="width:1000px;" rows="5" warp="virtual" placeholder="正文"></textarea>
 							</div>
 							<br/><br/>
 							<div class="btn-group pull-left" style="margin-left: 0px;">
-								<button id="addBtn" type="button" class="btn btn-default">
-								<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>发布</button>
+								<button id="btn_publishComment" type="button" class="btn btn-default">发布</button>
 							</div>
 						</form>			
 					<!--//进行消息推送-->

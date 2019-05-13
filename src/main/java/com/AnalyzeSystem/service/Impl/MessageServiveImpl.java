@@ -45,4 +45,9 @@ public class MessageServiveImpl implements MessageService
     public String selectUserNameByIdInMessage(int messageId){
         return messageDao.selectUserNameByIdInMessage(messageId);
     }
+
+    public List<Message> selectAll()
+    {
+        return messageDao.selectAll();
+    }
 }

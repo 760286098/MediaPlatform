@@ -6,6 +6,7 @@ public class MessagePack {
     private String content;
     private String userName;
     private String date;
+    private int messageId;
 
     public String getTitle() {
         return title;
@@ -39,5 +40,11 @@ public class MessagePack {
         this.date = date;
     }
 
-    
+    public int getMessageId() {
+        return messageId;
+    }
+
+    public void setMessageId(int messageId) {
+        this.messageId = messageId;
+    }
 }

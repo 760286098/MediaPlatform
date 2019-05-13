@@ -5,40 +5,46 @@ import com.AnalyzeSystem.model.Comment;
 import com.AnalyzeSystem.service.CommentService;
 import com.AnalyzeSystem.service.DaoService;
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
-public class CommentServiceImpl implements CommentService,DaoService
+@Service("CommentService")
+public class CommentServiceImpl implements CommentService
 {
-    static CommentDao commentDao;
 
-    SqlSession session;
+    @Resource
+    private CommentDao commentDao;
 
-    public void commit(){
-        session.commit();
-    }
-    public void close(){
-        session.close();
-    }
-    /*public static CommentDao getInstance(){
-        if (commentDao==null){
-            commentDao=new CommentDao();
-        }
-        return commentDao;
-    }*/
-    public void insertComment(Comment comment){
-        session.insert("Comment.insertComment",comment);
-    }
-    public Comment selectCommentByCommentId(String commentId){
-        return session.selectOne("Comment.selectCommentByCommentId",commentId);
-    }
-    public List<Comment> selectCommentByUserId(String userId){
-        return session.selectList("Comment.selectCommentByUserId",userId);
-    }
-    public List<Comment> selectCommentByMessageId(String messageId){
-        return session.selectList("Comment.selectCommentByMessageId",messageId);
-    }
-    public void deleteCommentById (String commentId){
-        session.delete("Comment.deleteCommentById",commentId);
-    }
+
+    public void insertComment(Comment comment)
+    {
+        commentDao.insertComment(comment);
+    };
+
+    public Comment selectCommentByCommentId(String commentId)
+    {
+        return commentDao.selectCommentByCommentId(commentId);
+    };
+
+    public List<Comment> selectCommentByUserId(String userId)
+    {
+        return commentDao.selectCommentByUserId(userId);
+    };
+
+    public List<Comment> selectCommentByMessageId(String messageId)
+    {
+        return commentDao.selectCommentByMessageId(messageId);
+    };
+
+    public void deleteCommentById(String commentId)
+    {
+        commentDao.deleteCommentById(commentId);
+    };
+
+    public List<Comment> selectAllOfCurrentMessage(int messageId)
+    {
+        return commentDao.selectAllOfCurrentMessage(messageId);
+    };
 }

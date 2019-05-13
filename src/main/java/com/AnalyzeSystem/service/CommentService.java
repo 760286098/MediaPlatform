@@ -17,4 +17,6 @@ public interface CommentService {
     public List<Comment> selectCommentByMessageId(String messageId);
 
     public void deleteCommentById(String commentId);
+
+    public List<Comment> selectAllOfCurrentMessage(int messageId);
 }

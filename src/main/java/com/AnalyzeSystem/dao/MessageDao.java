@@ -22,5 +22,7 @@ public interface MessageDao{
 
     String selectUserNameByIdInMessage(int messageId);
 
+    List<Message> selectAll();
+
 
 }

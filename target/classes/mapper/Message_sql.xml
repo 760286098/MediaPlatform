@@ -37,4 +37,8 @@
     <select id="getLastestMessageId" resultType="int">
         select max(messageId) FROM message
     </select>
+
+    <select id="selectAll" resultType="Message">
+        select * from message order by messageId desc
+    </select>
 </mapper>

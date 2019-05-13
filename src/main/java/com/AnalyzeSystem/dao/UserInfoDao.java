@@ -63,5 +63,4 @@ public interface UserInfoDao {
      * @return
      */
     int getLastestUserId();
-
 }

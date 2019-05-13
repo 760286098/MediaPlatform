@@ -53,9 +53,54 @@ $(function() {
 });
 
 $(function() {
-    $('#a_InsideGotoMsgDetail').click(function() {
-        window.location.href = baselocation + "/social/msgDetail/view";
+    $(".messagelist").each(function () {
+        $(this).click(function () {
+            /*alert($(this).attr('id'));*/
+            $.ajax(
+                {
+                    type:'get',
+                    url:baselocation+"/viewDetails",
+                    data:{
+                        messageId:$(this).attr('id') //这里是String类型
+                    },
+                    dataType:'json',
+                    success:function (data) {
+                        if(data.code === 1)
+                        {
+                            window.location.href = baselocation+"/social/msgDetail/view";
+                        }
+                    }
+
+                }
+            )
+        })
     })
 });
+
+$(function() {
+    $('#btn_publishComment').click(function() {
+        $.ajax(
+            {
+                type:'post',
+                url:baselocation+"/publishComment",
+                data:
+                    {
+                        content: $('#comment_content').val()
+                    },
+                dataType:'json',
+                success:function (data) {
+                    if(data.code === 1)
+                    {
+                        alert('comment send success');
+                        window.location.href = baselocation + "/social/msgDetail/view";
+                    }
+                }
+            }
+        )
+    })
+});
+
+
+
 
 

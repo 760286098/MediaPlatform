@@ -21,5 +21,7 @@ public interface MessageService {
 
     String selectUserNameByIdInMessage(int messageId);
 
+    List<Message> selectAll();
+
 
 }
