@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="AccessList">
+
+    <insert id="insertAccessList">
+        insert into accessList (sequenceId,isused)
+        value (#{sequenceId},false)
+    </insert>
+
+    <update id="updateFlag">
+        UPDATE accessList
+        <set>
+            isused=#{newFlag}
+        </set>
+        where sequenceId=#{sequenceId}
+    </update>
+
+    <delete id="deleteBySequenceId">
+        delete from accessList where sequenceId=#{sequenceId}
+    </delete>
+
+    <select id="selectBySequenceId" resultType="SequenceNumber">
+        select * from accessList where sequenceId=#{sequenceId};
+    </select>
+
+    <select id="selectAll" resultType="SequenceNumber">
+        select * from accessList;
+    </select>
+
+</mapper>

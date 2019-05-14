@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.AnalyzeSystem.dao.Mp_infoDao">
+
+    <select id="selectAll" resultType="mp_info">
+        select * from mp_info m order by m._id asc
+    </select>
+
+</mapper>

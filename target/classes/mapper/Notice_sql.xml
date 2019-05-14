@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Notice">
+    <insert id="insertNotice" parameterType="com.AnalyzeSystem.model.Notice">
+        insert into notice(noticeId,time,content)
+        value (#{noticeId},#{time},#{content})
+    </insert>
+
+    <delete id="deleteNotice">
+        delete from notice where noticeId=#{noticeId}
+    </delete>
+
+    <select id="selectNoticeById" resultType="com.AnalyzeSystem.model.Notice">
+        select * from notice where noticeId=#{noticeId};
+    </select>
+
+    <select id="selectAll" resultType="com.AnalyzeSystem.model.Notice">
+        select * from notice
+    </select>
+
+    <update id="updateContentById">
+        update notice
+        <set>
+            <if test="newContent!=null and newContent!='' ">content =#{newContent},</if>
+        </set>
+        where noticeId=#{noticeId}
+    </update>
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.AnalyzeSystem.dao.ArticleDao">
+
+    <insert id="insertArticle" parameterType="article">
+        insert into article(articleId,title,content)
+        value (#{article.articleId},#{article.title},#{article.content})
+    </insert>
+
+    <select id="selectArticleById" resultType="Article">
+        select * from article where articleId=#{articleId}
+    </select>
+
+    <select id="selectArticleByTitle" resultType="Article">
+        select * from article where title=#{title};
+    </select>
+
+    <delete id="deleteArticle">
+        delete from article where articleId=#{articleId}
+    </delete>
+
+    <!-- 根据分页信息/搜索内容查找用户列表 -->
+    <select id="listByPage" resultType="com.AnalyzeSystem.common.vo.ArticleVO">
+        SELECT
+        *
+        FROM
+        article
+        <where>
+            1=1
+            <if test="search != null">
+                AND (
+                article_id LIKE '%' #{search} '%'
+                OR title LIKE '%' #{search} '%'
+                )
+            </if>
+            <if test="pageInfo.sort != null">
+                ORDER BY ${pageInfo.sort} ${pageInfo.order}
+            </if>
+        </where>
+    </select>
+
+</mapper>
