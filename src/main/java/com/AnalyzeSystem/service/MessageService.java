@@ -1,7 +1,7 @@
 package com.AnalyzeSystem.service;
 
 import com.AnalyzeSystem.model.Message;
-import org.springframework.transaction.annotation.Transactional;
+
 
 import java.util.List;
 

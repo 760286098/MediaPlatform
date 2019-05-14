@@ -4,6 +4,7 @@
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 
 <html>
@@ -23,6 +24,7 @@
     <link rel="stylesheet" href="../../../css/childmenu.css" type="text/css" media="screen">
     <link rel="stylesheet" href="../../../css/bootstrap-table.css"/>
     <link rel="stylesheet" href="../../../css/bootstrap-table-fixed-columns.css"/>
+    <link rel="stylesheet" href="../../../css/souGouWeiXin_css.css"/>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -106,65 +108,44 @@
             <!--文章概览-->
             <p>
                 <font size="6">
-                    文章
+                    公众号
                 </font>
             </p></br>
 
-            <%--在实现爬取文章标题后添加此功能--%>
-            <%--<form action="/viewrecord">
-                <div>
-                    <label for="timeStart">时间范围</label>
-                    <input style="width:150px;height:33px" name="start" type="text" id="timeStart" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" autocomplete="off" disableautocomplete/>
 
-                    <input style="width:150px;height:33px" name="end" type="text" id="timeEnd" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" autocomplete="off" disableautocomplete/>
+            <c:forEach items="${mp_infos}" var="mp_info">
 
-                    <button id="btn_query_articles" type="submit" class="btn btn-default" class="btn-group pull-left" style="margin-left: 10px;">
-                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询</button>
+            <li style="background: #f4f4f4">
+                <div class="gzh-box2">
+                    <div class="img-box" style="float: left" >
+                        <img src="${mp_info.logo_url}" style="width: 58px; height: 58px; border-radius:50%; overflow:hidden;">
+                    </div>
+                    <div class="txt-box" style="float: left">
+                        <p class="tit">
+                            <a target="_blank" id="${mp_info._id}" class="MpList"><em><!--red_beg--><font size="5">&nbsp;&nbsp;${mp_info.name}<!--red_end--></font></em></a>
+                        </p>
+                        <p class="info">&nbsp;&nbsp;微信号：<label>${mp_info.wx_hao}</label>
+                        </p>
+                    </div>
                 </div>
-            </form>--%>
-
-
-            <p>
-                </br>
-                </br>
-                </br>
-                <font size="4">
-                    查询结果
-                </font>
-            </p>
-            </br>
-
-            <!-- bootstrap table-->
-            <table id="article_table"></table>
-            <%--
-            <table class="table table-bordered table-striped" id="article_table">
-                <thead>
-                <tr>
-                    <th>标题</th>
-                    <th>浏览量</th>
-                    <th></th>
-                </tr>
-
-                &lt;%&ndash;<%for(Countinfo countinfo:countinfos){%>
-                <tr>
-                    <th><%=countinfo.getBrand()%></th>
-                    <th><%=countinfo.getModel()%></th>
-                    <th>
-                        <%=countinfo.getDistinct()%>
-                    </th>
-                    <th><%=countinfo.getTotalcount()%></th>
-                    <th><a href="/viewinfo?brand=<%=countinfo.getBrand()%>&model=<%=countinfo.getModel()%>">
-                        <button  type="button" class="btn btn-primary" class="btn-group pull-left" style="margin-left: 10px;">
-                            查看详细信息</button>
-                    </a></th>
-                </tr>
-                <%;}%>&ndash;%&gt;
-                </thead>
-            </table>
-            --%>
-            <!--浏览记录-->
-            <br/>
-            <br/>
+                <br/>
+                <br/>
+                <br/>
+                <dl>
+                    <dt>功能介绍：</dt>
+                    <dd>${mp_info.description}</dd>
+                </dl>
+                <dl>
+                    <dt>最近文章：</dt>
+                    <dd>
+                        <a target="_blank" uigs="account_article_0" name="${mp_info.recent_wz}" class="RecentArticle">${mp_info.recent_wz}</a>
+                    </dd>
+                </dl>
+                <br/>
+                <br/>
+            </li>
+                <hr style=" height:2px;border:none;border-top:2px dotted #9d9d9d;" />
+            </c:forEach>
 
 
 
@@ -180,72 +161,8 @@
 </body>
 
 <script type="text/javascript" src="../../../js/systemScripts/nav_bar.js"></script>
-<script type="text/javascript" src="../../../js/systemScripts/dataTotal.js"></script>
+<%--<script type="text/javascript" src="../../../js/systemScripts/dataTotal.js"></script>--%>
 </html>
-<script type="text/javascript">
 
-
-
-    /*var list1 = new Array;
-    var list2 = new Array;
-    var str = document.getElementById("length").name;
-    var lengthid=parseInt(str,10);
-    for(var m=0;m < lengthid ;m++){
-        if(list1.indexOf(document.getElementById(m+101).name)==-1){
-            list1[list1.length] = document.getElementById(m+101).name;
-        }
-
-    }
-    for(var n=0;n <list1.length ; n++){
-        var num = document.getElementsByName(list1[n]).length;
-        list2[list2.length] = new Array;
-        for(var k=0;k<num;k++)
-        {
-            list2[n][k] = document.getElementsByName(list1[n])[k].value;
-        }
-
-    }
-
-
-    var ddlProvince = document.getElementById("carlist1");
-    var ddlCity = document.getElementById("carlist2");
-    for(var i =0;i<list1.length; i++)
-    {
-        var option = document.createElement("option");
-        option.appendChild(document.createTextNode(list1[i]));
-        option.value = list1[i];
-        ddlProvince.appendChild(option);
-        //city initialize
-        var firstprovince = list2[0];
-        for (var j = 0; j < firstprovince.length; j++) {
-            var optioncity = document.createElement("option");
-            optioncity.appendChild(document.createTextNode(firstprovince[j]));
-            optioncity.value = firstprovince[j];
-            ddlCity.appendChild(optioncity);
-        }
-    }
-    function indexof(obj,value)
-    {
-        var k=0;
-        for(;k<obj.length;k++)
-        {
-            if(obj[k] == value)
-                return k;
-        }
-        return k;
-    }
-    function selectprovince(obj) {
-        ddlCity.options.length = 0;//clear
-        var index = indexof(list1,obj.value);
-        var list2element = list2[index];
-        for(var i =0;i<list2element.length; i++)
-        {
-            var option = document.createElement("option");
-            option.appendChild(document.createTextNode(list2element[i]));
-            option.value = list2element[i];
-            ddlCity.appendChild(option);
-        }
-    }*/
-</script>
 
 

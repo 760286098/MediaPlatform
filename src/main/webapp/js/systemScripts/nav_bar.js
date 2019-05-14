@@ -101,6 +101,83 @@ $(function() {
 });
 
 
+$(function() {
+    $(".MpList").each(function () {
+        $(this).click(function () {
+            /*alert($(this).attr('id'));*/
+            $.ajax(
+                {
+                    type:'get',
+                    url:baselocation+"/showArticles",
+                    data:{
+                        mpId:$(this).attr('id') //这里是String类型
+                    },
+                    dataType:'json',
+                    success:function (data) {
+                        if(data.code === 1)
+                        {
+                            window.location.href = baselocation + "/dataAnalyze/data_ArticleList/view";
+                        }
+                    }
+
+                }
+            )
+        })
+    })
+});
+
+$(function() {
+    $(".ArticleLists").each(function () {
+        $(this).click(function () {
+            /*alert($(this).attr('id'));*/
+            $.ajax(
+                {
+                    type:'get',
+                    url:baselocation+"/showArticleDetail",
+                    data:{
+                        articleId:$(this).attr('id') //这里是String类型
+                    },
+                    dataType:'json',
+                    success:function (data) {
+                        if(data.code === 1)
+                        {
+                            window.location.href = baselocation + "/dataAnalyze/data_ArticleDetails/view";
+                        }
+                    }
+
+                }
+            )
+        })
+    })
+});
+
+$(function() {
+    $(".RecentArticle").each(function () {
+        $(this).click(function () {
+            /*alert($(this).attr('id'));*/
+            $.ajax(
+                {
+                    type:'get',
+                    url:baselocation+"/showArticleDetailUsingName",
+                    data:{
+                        articleName:$(this).attr('name') //这里是String类型
+                    },
+                    dataType:'json',
+                    success:function (data) {
+                        if(data.code === 1)
+                        {
+                            window.location.href = baselocation + "/dataAnalyze/data_ArticleDetails/view";
+                        }
+                    }
+
+                }
+            )
+        })
+    })
+});
+
+
+
 
 
 

@@ -103,7 +103,8 @@ public class socialController {
             List<CommentPack> comments = null;
             session.setAttribute("comments",comments);
         }
-        return "/social/msgDetail";}
+        return "/social/msgDetail";
+    }
 
     @GetMapping(value = "/viewDetails")
     @ResponseBody
