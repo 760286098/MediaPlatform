@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="analyzeModule" />
         <module name="AnalyzeSysSSM" />
+        <module name="MediaPlatform" />
       </profile>
     </annotationProcessing>
   </component>
