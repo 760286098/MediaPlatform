@@ -7,4 +7,7 @@
         select * from mp_info m order by m._id asc
     </select>
 
+    <select id="selectNameById" resultType="String">
+        select (name) from mp_info where _id=#{id}
+    </select>
 </mapper>

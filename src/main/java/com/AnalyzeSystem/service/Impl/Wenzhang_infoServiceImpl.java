@@ -1,6 +1,6 @@
 package com.AnalyzeSystem.service.Impl;
 
-import com.AnalyzeSystem.common.ArticleInfo;
+import com.AnalyzeSystem.model.ArticleInfo;
 import com.AnalyzeSystem.dao.Mp_infoDao;
 import com.AnalyzeSystem.dao.Wenzhang_infoDao;
 import com.AnalyzeSystem.model.Wenzhang_info;

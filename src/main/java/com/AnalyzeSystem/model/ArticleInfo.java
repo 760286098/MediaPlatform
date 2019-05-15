@@ -1,4 +1,4 @@
-package com.AnalyzeSystem.common;
+package com.AnalyzeSystem.model;
 import java.util.Date;
 
 public class ArticleInfo {

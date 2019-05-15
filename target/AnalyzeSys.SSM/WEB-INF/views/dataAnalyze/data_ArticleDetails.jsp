@@ -152,7 +152,7 @@
                     <br>
 
                     <div style="text-align:center;">
-                        <img src="${currentArticle.wordCloud_Graph}" style="  width: 358px; height: auto;">
+                        <img src="../../../${currentArticle.wordCloud_Graph}" style="  width: 358px; height: auto;">
                     </div>
 
                     <br/>

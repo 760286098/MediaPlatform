@@ -119,7 +119,9 @@
                 <div class="gzh-box2">
                     <div class="txt-box">
                         <p class="tit">
-                            <a target="_blank" id="${article._id}" class="ArticleLists"><em><!--red_beg--><font size="5">&nbsp;&nbsp;${article.title}<!--red_end--></font></em></a>
+                            <a target="_blank" id="${article._id}" class="ArticleLists">
+                                <em><!--red_beg--><font size="5">&nbsp;&nbsp;${article.title}<!--red_end--></font></em>
+                            </a>
                         </p>
                         <c:choose>
                             <c:when test="${article.author ne null}">
@@ -133,16 +135,6 @@
 
 
                         </c:choose>
-
-                        <%--<c:if test="${article.author ne null}" var="flag">
-                            <p class="info"><label>作者：${article.author}</label>
-                            </p>
-                        </c:if>--%>
-
-                        <%--<c:if test="${not flag}">
-                            <p class="info"><label>作者：佚名</label>
-                            </p>
-                        </c:if>--%>
                     </div>
                 </div>
                 <br/>

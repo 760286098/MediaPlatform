@@ -1,6 +1,6 @@
 package com.AnalyzeSystem.dao;
 
-import com.AnalyzeSystem.common.ArticleInfo;
+import com.AnalyzeSystem.model.ArticleInfo;
 import com.AnalyzeSystem.model.Wenzhang_info;
 
 import java.util.List;

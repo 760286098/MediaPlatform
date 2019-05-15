@@ -15,4 +15,13 @@
         select * from wenzhang_info where title = #{title}
     </select>
 
+    <select id="selectAllArticles" resultType="ArticleInfo">
+        select (mp_id,likes,browse_times,comments,date_time) from wenzhang_info
+    </select>
+
+    <select id="selectInfoById" resultType="ArticleInfo">
+        select (mp_id,likes,browse_times,comments,date_time) from wenzhang_info
+        where _id=#{id}
+    </select>
+
 </mapper>
