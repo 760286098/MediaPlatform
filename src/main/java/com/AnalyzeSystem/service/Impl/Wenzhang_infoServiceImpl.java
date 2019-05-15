@@ -1,9 +1,8 @@
 package com.AnalyzeSystem.service.Impl;
 
-import com.AnalyzeSystem.common.vo.ArticleInfo;
+import com.AnalyzeSystem.common.ArticleInfo;
 import com.AnalyzeSystem.dao.Mp_infoDao;
 import com.AnalyzeSystem.dao.Wenzhang_infoDao;
-import com.AnalyzeSystem.model.Article;
 import com.AnalyzeSystem.model.Wenzhang_info;
 import com.AnalyzeSystem.service.Wenzhang_infoService;
 import org.springframework.stereotype.Service;
