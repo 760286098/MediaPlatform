@@ -7,6 +7,9 @@ public class Article {
     private String title;
     private String content;
 
+    public Article() {
+    }
+
     public String getArticleId() {
         return articleId;
     }

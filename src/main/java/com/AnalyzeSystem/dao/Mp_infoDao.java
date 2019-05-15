@@ -7,4 +7,5 @@ import java.util.List;
 public interface Mp_infoDao {
 
     List<Mp_info> selectAll();
+    String selectNameById(int id);
 }

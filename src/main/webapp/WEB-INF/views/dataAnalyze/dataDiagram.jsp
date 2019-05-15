@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%
     /*获取工程路径*/
@@ -39,9 +40,7 @@
     <script type="text/javascript" src="../../../js/bootstrap-table-zh-CN.js"></script>
     <script language="javascript" type="text/javascript" src="../../../js/My97DatePicker/WdatePicker.js"></script>
     <script type="text/javascript">baselocation="${ctx}"</script>
-
-
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
 </head>
 
 <body>
@@ -108,30 +107,24 @@
 						</font>
 					</p>
 					</br>
-					<p>
-					
-					<!--数据分析图-->
-					<form action="/DrawChartServlet" method="post">
-					<div class="btn pull-left" style="margin-left: 0px;">
-					<button class="btn btn-info" type="submit" name="submit" value="BarChart">BarChart</button>
-					<button class="btn btn-info" type="submit" name="submit" value="PieChart">PieChart</button>
-					</div>
-						<br>
-						<%if(request.getAttribute("graphURL")!=null){%>
-						    <img src="<%= request.getAttribute("graphURL") %>">
-					<%;}%>
-
-					</form>
-
-
 					<!--//数据分析图-->
-
-					
+               <div style="width: 600px; height: 400px">
+                   <canvas id="likes"></canvas>
+               </div>
+               <div style="width: 600px; height: 400px">
+                   <canvas id="browseTime"></canvas>
+               </div>
+               <div style="width: 600px; height: 400px">
+                   <canvas id="broeseTimeforEachArticle"></canvas>
+               </div>
+               <div style="width: 600px; height: 400px">
+                   <canvas id="browseTimeChange"></canvas>
+               </div>
+               <div style="width: 600px; height: 400px">
+                   <canvas id="publishTime"></canvas>
+               </div>
 				<!--//数据统计分析-->
-			    </div>
-
-
-
+           </div>
         </div>
 
     </div>
@@ -206,4 +199,210 @@
             ddlCity.appendChild(option);
         }
     }
+
+</script>
+<script>
+    var ctx = document.getElementById('likes').getContext('2d');
+    var chart1 = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels:[
+            <c:forEach items="${likes.keySet()}" var="name">
+                ${name},
+            </c:forEach>
+                ],
+            datasets: [{
+                label: '各公众号点赞数',
+                data: [
+                    <c:forEach items="${likes.values()}" var="value">
+                    ${value},
+                    </c:forEach>
+                ],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    var chart2=new Chart(document.getElementById('browseTime').getContext('2d'),{
+        type: 'bar',
+        data: {
+            labels: [
+                <c:forEach items="${browseNumber.keySet()}" var="name">
+                ${name},
+                </c:forEach>
+            ],
+            datasets: [{
+                label: '各公众号浏览量',
+                data: [
+                    <c:forEach items="${browseNumber.values()}" var="value">
+                    ${value},
+                    </c:forEach>
+                ],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    var chart3=new Chart(document.getElementById('broeseTimeforEachArticle').getContext('2d'),{
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '文章浏览量',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    var chart4=new Chart(document.getElementById('browseTimeChange').getContext('2d'),{
+        type: 'line',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '公众号浏览量变化',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    var chart5=new Chart(document.getElementById('publishTime').getContext('2d'),{
+        type: 'pie',
+        data: {
+            labels: ['0-4','4-8','8-12','12-16','16-20','20-24'],
+            datasets: [{
+                label: '文章时间分布',
+                data: [
+                    <c:forEach items="${publishTime}" var="value">
+                    ${value},
+                    </c:forEach>
+                ],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+
+    chart5=chart1;
 </script>

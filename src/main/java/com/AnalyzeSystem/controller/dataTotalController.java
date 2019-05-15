@@ -1,32 +1,17 @@
 package com.AnalyzeSystem.controller;
 
-import com.AnalyzeSystem.common.PageInfo;
 import com.AnalyzeSystem.common.ReturnCodes.CommonReturnCode;
-import com.AnalyzeSystem.common.ReturnCodes.LoginReturnCode;
-import com.AnalyzeSystem.common.WebPageResult;
 import com.AnalyzeSystem.common.WebResult;
-import com.AnalyzeSystem.common.dto.ArticlePageDTO;
 import com.AnalyzeSystem.model.Mp_info;
-import com.AnalyzeSystem.model.UserInfo;
 import com.AnalyzeSystem.model.Wenzhang_info;
-import com.AnalyzeSystem.service.ArticleService;
 import com.AnalyzeSystem.service.Mp_infoService;
-import com.AnalyzeSystem.service.UserInfoService;
 import com.AnalyzeSystem.service.Wenzhang_infoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import javax.imageio.ImageIO;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpSession;
@@ -71,7 +56,10 @@ public class dataTotalController {
 
     @GetMapping(value = "/dataAnalyze/dataDiagram/view")
     public String dataDiagram(Model model) {
-        return "/dataAnalyze/dataDiagram";
+        model.addAttribute("likes",wenzhang_infoService.getLikes());
+        model.addAttribute("browseNumber",wenzhang_infoService.getBrowseNumber());
+        model.addAttribute("publishTime",wenzhang_infoService.publishTime());
+        return "/WEB-INF/views/dataAnalyze/dataDiagram.jsp";
     }
 
     @GetMapping(value = "/showArticles")

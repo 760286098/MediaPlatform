@@ -8,6 +8,8 @@
         value (#{article.articleId},#{article.title},#{article.content})
     </insert>
 
+
+
     <select id="selectArticleById" resultType="Article">
         select * from article where articleId=#{articleId}
     </select>

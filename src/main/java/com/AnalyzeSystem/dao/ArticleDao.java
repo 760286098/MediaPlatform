@@ -2,6 +2,7 @@ package com.AnalyzeSystem.dao;
 
 import com.AnalyzeSystem.common.PageInfo;
 import com.AnalyzeSystem.common.dto.ArticlePageDTO;
+import com.AnalyzeSystem.common.vo.ArticleInfo;
 import com.AnalyzeSystem.common.vo.ArticleVO;
 import com.AnalyzeSystem.model.Article;
 

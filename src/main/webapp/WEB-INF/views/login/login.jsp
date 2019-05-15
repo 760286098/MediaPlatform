@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>登录</title>
     <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-    <link href="../../../css/signin.css" rel="stylesheet">
-    <link href="../../../css/style1.css" rel="stylesheet">
-    <script src="../../../js/jquery-1.7.1.min.js"></script>
-    <script src="../../../js/ui.js"></script>
+    <link href="/css/signin.css" rel="stylesheet">
+    <link href="/css/style1.css" rel="stylesheet">
+    <script src="/js/jquery-1.7.1.min.js"></script>
+    <script src="/js/ui.js"></script>
     <script type="text/javascript">baselocation="${ctx}"</script>
 </head>
 <body>
@@ -57,7 +57,7 @@
 </div>
 </body>
 
-<script type="text/javascript" src="../../../js/systemScripts/login.js"></script>
+<script type="text/javascript" src="/js/systemScripts/login.js"></script>
 <%--
 <script>
     var success = document.getElementById("success").value;
